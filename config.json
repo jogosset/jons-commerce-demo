@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "code": {
+    "owner": "jogosset",
+    "repo": "jons-commerce-demo",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/jogosset/jons-commerce-demo"
+    }
+  },
+  "content": {
+    "source": {
+      "url": "https://content.da.live/jogosset/jons-commerce-demo",
+      "type": "markup"
+    }
+  },
+  "folders": {
+    "/products/": "/products/default"
+  },
+  "cdn": {
+    "live": {
+      "host": "main--jons-commerce-demo--jogosset.aem.live"
+    },
+    "preview": {
+      "host": "main--jons-commerce-demo--jogosset.aem.page"
+    }
+  },
+  "headers": {},
+  "public": {
+    "default": {
+      "commerce-core-endpoint": "https://edge-sandbox-graph.adobe.io/api/3207ffbc-478d-4ec4-b19b-638710bddd9c/graphql",
+      "commerce-endpoint": "https://edge-sandbox-graph.adobe.io/api/3207ffbc-478d-4ec4-b19b-638710bddd9c/graphql",
+      "commerce-assets-enabled": false,
+      "headers": {
+        "all": {
+          "Store": "citisignal_us"
+        },
+        "cs": {
+          "Magento-Customer-Group": "b6589fc6ab0dc82cf12099d1c2d40ab994e8410c",
+          "Magento-Store-Code": "citisignal_store",
+          "Magento-Store-View-Code": "citisignal_us",
+          "Magento-Website-Code": "citisignal",
+          "x-api-key": "a1d40bcffff9475abc03c2c25ca67354",
+          "Magento-Environment-Id": "2225e89c-bda7-464f-bb90-d9d994d63590"
+        }
+      },
+      "analytics": {
+        "base-currency-code": "USD",
+        "environment": "Production",
+        "store-id": 1,
+        "store-name": "Main Website Store",
+        "store-url": "https://main--jons-commerce-demo--jogosset.aem.live/",
+        "store-view-id": 1,
+        "store-view-name": "Default Store View",
+        "website-id": 1,
+        "website-name": "Main Website"
+      }
+    }
+  },
+  "robots": {
+    "txt": "User-agent: *\nAllow: /\nDisallow: /drafts/\nDisallow: /enrichment/\nDisallow: /tools/\nDisallow: /plugins/experimentation/\n\nSitemap: https://main--jons-commerce-demo--jogosset.aem.live/sitemap-index.xml"
+  },
+  "sidekick": {
+    "project": "Demo Builder Project",
+    "plugins": [
+      {
+        "id": "cif",
+        "title": "Commerce",
+        "environments": [
+          "edit"
+        ],
+        "url": "https://main--jons-commerce-demo--jogosset.aem.live/tools/picker/dist/index.html",
+        "isPalette": true,
+        "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
+      },
+      {
+        "id": "personalisation",
+        "title": "Personalisation",
+        "environments": [
+          "edit"
+        ],
+        "url": "https://main--jons-commerce-demo--jogosset.aem.live/tools/segments/dist/index.html",
+        "isPalette": true,
+        "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
+      }
+    ]
+  }
+}
