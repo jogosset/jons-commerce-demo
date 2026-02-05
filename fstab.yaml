@@ -1,0 +1,7 @@
+mountpoints:
+  /:
+    url: https://content.da.live/jogosset/jons-commerce-demo/
+    type: markup
+
+folders:
+  /products/: /products/default
